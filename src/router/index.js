@@ -4,6 +4,7 @@ import RecipeSelection from '../views/RecipeSelection.vue';
 import MenuSummary from '../views/MenuSummary.vue';
 import CookingPage from '../views/CookingPage.vue';
 import ShoppingList from '../views/ShoppingList.vue';
+import RecipePage from '../views/RecipePage.vue';
 
 const routes = [
   {
@@ -31,10 +32,15 @@ const routes = [
     name: 'ShoppingList',
     component: ShoppingList,
   },
+  {
+    path: '/recipe/:id',
+    name: 'RecipePage',
+    component: RecipePage,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 

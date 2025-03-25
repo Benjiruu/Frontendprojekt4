@@ -4,15 +4,21 @@
     <div v-if="selectedMenu">
       <div class="menu-section">
         <h2>Förrätt</h2>
+        <img class="menu-image" :src="selectedMenu.appetizer.image" alt="Förrätt" />
         <p>{{ selectedMenu.appetizer.name }}</p>
+        <router-link :to="{ name: 'RecipePage', params: { id: selectedMenu.appetizer.id } }">Visa recept</router-link>
       </div>
       <div class="menu-section">
         <h2>Huvudrätt</h2>
+        <img class="menu-image" :src="selectedMenu.mainCourse.image" alt="Huvudrätt" />
         <p>{{ selectedMenu.mainCourse.name }}</p>
+        <router-link :to="{ name: 'RecipePage', params: { id: selectedMenu.mainCourse.id } }">Visa recept</router-link>
       </div>
       <div class="menu-section">
         <h2>Efterrätt</h2>
+        <img class="menu-image" :src="selectedMenu.dessert.image" alt="Efterrätt" />
         <p>{{ selectedMenu.dessert.name }}</p>
+        <router-link :to="{ name: 'RecipePage', params: { id: selectedMenu.dessert.id } }">Visa recept</router-link>
       </div>
     </div>
     <div v-else>
@@ -79,6 +85,16 @@ h1 {
 
 .menu-section {
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 300px;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -107,7 +123,6 @@ button:hover {
   background-color: #369f6e;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .menu-summary {
     padding: 10px;
@@ -128,6 +143,11 @@ button:hover {
   button {
     padding: 0.5rem;
     font-size: 0.9rem;
+  }
+
+  .menu-image {
+    max-width: 100%;
+    height: auto;
   }
 }
 </style>
