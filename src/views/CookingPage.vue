@@ -112,8 +112,9 @@ export default {
 
 .content {
   text-align: left;
-  margin-left: 200px; 
   max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-section {
