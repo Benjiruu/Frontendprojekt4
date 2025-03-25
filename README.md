@@ -1,9 +1,9 @@
 På /shopping-list: visa ingredienserna i en tabell istället (en kolumn får ingrediens, en kolumn får antal och enhet).
-Ocks� p� /shopping-list: sortera i bokstavsordning s� det �r l�ttare att f� �versikt n�r man handlar.
-P� /menu-summary: ha en l�nk till receptet f�r varje r�tt, som leder till en sida f�r enbart det receptet (inte till en sida med alla tre p� samma g�ng).
-P� /cooking-page: visa varje steg p� en egen rad (inte i en enda horisontell rad) och l�t denna lista vara v�nsterjusterad, inte centrerad (du kommer att beh�va en maxbredd p� sidans inneh�ll f�r att texten inte ska hamna j�ttel�ngt till v�nster).
-Ocks� p� /cooking-page: visa ocks� ingredienserna och enheterna, f�re matlagningsstegen (som antingen tabell eller v�nsterjusterad lista).
-Ocks� p� /cooking-page: visa ocks� en bild p� receptet f�re ingredienserna och matlagningsstegen. Du kan l�gga in bilderna direkt i projektmappen (gissningsvis i assets-mappen) och sedan referera till dem som filnamn i JSON-datan. (Andra s�tt att l�gga in bilderna �r ocks� till�tna, f�rutsatt att bilderna finns i projektmappen och allts� inte �r externa URL:er till n�gon annan sajt.)
+Också på /shopping-list: sortera i bokstavsordning så det är lättare att få översikt när man handlar.
+På /menu-summary: ha en länk till receptet för varje rätt, som leder till en sida för enbart det receptet (inte till en sida med alla tre på samma gång).
+På /cooking-page: visa varje steg på en egen rad (inte i en enda horisontell rad) och låt denna lista vara vänsterjusterad, inte centrerad (du kommer att behöva en maxbredd på sidans innehåll för att texten inte ska hamna jättelångt till vänster).
+Också på /cooking-page: visa också ingredienserna och enheterna, före matlagningsstegen (som antingen tabell eller vänsterjusterad lista).
+Också på /cooking-page: visa också en bild på receptet före ingredienserna och matlagningsstegen. Du kan lägga in bilderna direkt i projektmappen (gissningsvis i assets-mappen) och sedan referera till dem som filnamn i JSON-datan. (Andra sätt att lägga in bilderna är också tillåtna, förutsatt att bilderna finns i projektmappen och alltså inte är externa URL:er till någon annan sajt.)
 
 
-NPM run serve f�r att starta.
+NPM run serve för att starta.
